@@ -98,7 +98,7 @@
                 </children>
               </children>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_2EciPuL4Eeykrpxk3x1f4Q" containerData="8444" selectedElement="_2EciRuL4Eeykrpxk3x1f4Q">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_2EciPuL4Eeykrpxk3x1f4Q" containerData="8444" selectedElement="_2EciP-L4Eeykrpxk3x1f4Q">
               <children xsi:type="basic:PartSashContainer" xmi:id="_2EciP-L4Eeykrpxk3x1f4Q" containerData="7500" selectedElement="_2EciQOL4Eeykrpxk3x1f4Q" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_2EciQOL4Eeykrpxk3x1f4Q" elementId="org.eclipse.ui.editorss" containerData="8204" ref="_2EdK0-L4Eeykrpxk3x1f4Q"/>
                 <children xsi:type="basic:PartStack" xmi:id="_2EciQeL4Eeykrpxk3x1f4Q" elementId="right" containerData="1796" selectedElement="_2EciQuL4Eeykrpxk3x1f4Q">
@@ -123,7 +123,6 @@
               </children>
               <children xsi:type="basic:PartStack" xmi:id="_2EciRuL4Eeykrpxk3x1f4Q" elementId="bottom" containerData="2500" selectedElement="_2EciTuL4Eeykrpxk3x1f4Q">
                 <tags>org.eclipse.e4.secondaryDataStack</tags>
-                <tags>active</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_2EciR-L4Eeykrpxk3x1f4Q" elementId="org.eclipse.ui.views.ProblemView" ref="_2EdwYOL4Eeykrpxk3x1f4Q" closeable="true">
                   <tags>View</tags>
                   <tags>categoryTag:General</tags>
@@ -205,11 +204,14 @@
       <children xsi:type="basic:PartStack" xmi:id="_2EdK1OL4Eeykrpxk3x1f4Q" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_2EdK2eL4Eeykrpxk3x1f4Q">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
+        <tags>active</tags>
         <children xsi:type="basic:Part" xmi:id="_2EdK2eL4Eeykrpxk3x1f4Q" elementId="org.eclipse.e4.ui.compatibility.editor" containerData="5000" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Lotto.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Lotto.java&quot; partName=&quot;Lotto.java&quot; title=&quot;Lotto.java&quot; tooltip=&quot;Gamp/src/Practice/Lotto.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Gamp/src/Practice/Lotto.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;216&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Lotto.java&quot; partName=&quot;Lotto.java&quot; title=&quot;Lotto.java&quot; tooltip=&quot;Gamp/src/Practice/Lotto.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Gamp/src/Practice/Lotto.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;374&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
+          <tags>active</tags>
+          <tags>activeOnClose</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_wMfI8OL7EeykP5XjBsEElQ" elementId="org.eclipse.e4.ui.compatibility.editor" containerData="5000" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="LottoSequence.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
           <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;LottoSequence.java&quot; partName=&quot;LottoSequence.java&quot; title=&quot;LottoSequence.java&quot; tooltip=&quot;Gamp/src/Practice/LottoSequence.java&quot;>&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Gamp/src/Practice/LottoSequence.java&quot;/>&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;69&quot; selectionTopPixel=&quot;0&quot;/>&#xA;&lt;/editor>"/>
@@ -465,8 +467,6 @@
       <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xA;&lt;view>&#xA;&lt;terminalConnections id=&quot;org.eclipse.tm.terminal.view.ui.TerminalsView&quot;/>&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:Terminal</tags>
-      <tags>active</tags>
-      <tags>activeOnClose</tags>
       <menus xmi:id="_JmeKgOlTEeykdezspMeRZQ" elementId="org.eclipse.tm.terminal.view.ui.TerminalsView">
         <tags>ViewMenu</tags>
         <tags>menuContribution:menu</tags>
@@ -492,7 +492,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2Edw6-L4Eeykrpxk3x1f4Q" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Dqkz0OlTEeykdezspMeRZQ" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_2EecVeL4Eeykrpxk3x1f4Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5QpH8OnIEeyqrL5KUH9Azg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_2EecVeL4Eeykrpxk3x1f4Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2Edw-OL4Eeykrpxk3x1f4Q" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -523,7 +523,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2EdxM-L4Eeykrpxk3x1f4Q" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_DqmB8OlTEeykdezspMeRZQ" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_2Eeb2OL4Eeykrpxk3x1f4Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_5QqWEunIEeyqrL5KUH9Azg" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_2Eeb2OL4Eeykrpxk3x1f4Q"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_2EdxQOL4Eeykrpxk3x1f4Q" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -1107,7 +1107,7 @@
     <bindings xmi:id="_2EdyouL4Eeykrpxk3x1f4Q" keySequence="ALT+CR" command="_2EeadeL4Eeykrpxk3x1f4Q"/>
   </bindingTables>
   <bindingTables xmi:id="_2Edyo-L4Eeykrpxk3x1f4Q" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_2Edy3-L4Eeykrpxk3x1f4Q">
-    <bindings xmi:id="_Dk0xIOlTEeykdezspMeRZQ" keySequence="M1+W" command="_2EedXOL4Eeykrpxk3x1f4Q"/>
+    <bindings xmi:id="_5HX3MOnIEeyqrL5KUH9Azg" keySequence="M1+W" command="_2EedXOL4Eeykrpxk3x1f4Q"/>
   </bindingTables>
   <bindingTables xmi:id="_2EdypeL4Eeykrpxk3x1f4Q" bindingContext="_2Edy5OL4Eeykrpxk3x1f4Q"/>
   <bindingTables xmi:id="_2EdypuL4Eeykrpxk3x1f4Q" bindingContext="_2Edy5eL4Eeykrpxk3x1f4Q"/>
