@@ -1,0 +1,14 @@
+package Practice;
+
+public class Array3 {
+
+	public static void main(String[] args) {
+		char a[];
+		// "I love Java"
+		String str = "I love Java";
+		
+		a = str.toCharArray();
+		
+	}
+
+}

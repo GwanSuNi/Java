@@ -1,0 +1,13 @@
+package Practice;
+
+public class Array2 {
+
+	public static void main(String[] args) {
+		int a[][] = { { 'a', 'b', 'c' }, { 'd', 'e', 'f' } };
+		
+		System.out.println(a.length + "\t" + a[0].length);
+		
+		
+	}
+
+}

@@ -1,0 +1,8 @@
+package 추상클래스;
+
+public interface 비행기능 {
+	/*
+	 * public abstract 은 안써도 기본
+	 */
+	public abstract void 날기();
+}

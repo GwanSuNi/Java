@@ -1,0 +1,27 @@
+package Practice;
+
+public class Array6 {
+
+	public static void main(String[] args) {
+		char[] a = { 'c' , 'd' };
+		char[] b = { 'c' , 'd' };
+		
+		String aCheck = new String(a.toString());
+		String bCheck = new String(b.toString());
+		
+		a.toString();
+		String s = "aaaa";
+		System.out.println(s);
+		System.out.println(aCheck);
+		System.out.println(bCheck);
+		if (aCheck.equals(bCheck)) {
+			System.out.println("Same");
+		}
+		else {
+			System.out.println("Different");
+		}
+		
+		
+	}
+
+}

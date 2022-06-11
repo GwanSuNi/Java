@@ -1,0 +1,8 @@
+package 추상클래스;
+
+public class 마린 extends 유닛 {
+	public void 공격() {
+		
+	}
+
+}

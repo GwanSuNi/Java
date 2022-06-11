@@ -1,0 +1,5 @@
+package 추상클래스;
+
+public interface 비행기능 {
+	
+}

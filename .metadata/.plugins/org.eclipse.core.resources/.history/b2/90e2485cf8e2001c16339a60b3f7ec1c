@@ -1,0 +1,32 @@
+package Practice;
+
+public class Lotto {
+
+	public static void main(String[] args) {
+		int[] number = new int[6];
+
+		for(int i = 0; i < 6; i++) {
+			number[i] = (int) (Math.random() * 6 + 1);
+		}
+		
+		for(int i = 0; i < number.length; i++) {
+			for(int j = 0; j <= i; j++) {
+				if (number[i] == number[j]) {
+					number[j] = (int)(Math.random() * 6 + 1);
+				}
+			}
+			
+			for(int k = i; k >= 0; k--) {
+				if (number[i] == number[k]) {
+					number[k] = (int)(Math.random() * 6 + 1);
+				}
+			}
+		}
+		
+		for(var item : number) {
+			System.out.printf("%3d\t", item);
+		}
+	}
+}
+
+

@@ -1,0 +1,8 @@
+package Practice;
+
+public class P308_1 {
+	class A {
+		private int a;
+		public void set(int a) { this.a = a; }
+	}
+}

@@ -1,0 +1,11 @@
+package Practice;
+
+public class Array2D {
+
+	public static void main(String[] args) {
+		int a[][] = new [4][4];
+		
+		
+	}
+
+}
