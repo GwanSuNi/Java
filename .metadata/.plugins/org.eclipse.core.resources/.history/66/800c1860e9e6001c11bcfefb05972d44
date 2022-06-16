@@ -1,5 +1,0 @@
-package 추상클래스;
-
-abstract public class 유닛 {
-	abstract public void 공격();
-}

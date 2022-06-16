@@ -35,6 +35,6 @@ public class Array4 implements Ansi{
 				LDiagonalSum, (double) LDiagonalSum / count);
 		System.out.printf("\nR대각선 합: %d\t 평균: %f", 
 				RDiagonalSum, (double) RDiagonalSum / count2);
-		
+
 	}
 }
