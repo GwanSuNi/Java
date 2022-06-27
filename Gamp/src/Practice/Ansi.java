@@ -1,6 +1,6 @@
 package Practice;
 
-interface Ansi {
+public interface Ansi {
 
 	// [전역 변수 선언 부분]
 	public static final String RESET = "\u001B[0m";

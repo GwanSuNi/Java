@@ -3,4 +3,5 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="Practice.PrintStar"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="Practice.Ansi"/>
 </qualifiedTypeNameHistroy>

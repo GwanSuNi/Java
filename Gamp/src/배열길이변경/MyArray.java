@@ -15,7 +15,20 @@ public class MyArray {
 			data[size] = item;
 			size++ ;
 		}
-
+	}
+	
+	public void delete() {
+		if (size > 0) {
+			size--;
+			data[size] = 0;
+		}
+	}
+	
+	public void showData() {
+		for(int i =0; i < data.length; i++) {
+			System.out.printf("%3d", data[i]);
+		}
+		System.out.println();
 	}
 	
 }
