@@ -7,7 +7,7 @@ import Practice.Ansi;
  * - 뽑힌 번호의 상태를 어떻게 유지할 지 --> 자료구조의 형태
  * - 6개의 중복 없는 숫자 저장하는 방법
  */
-public class 로또생성기 implements Ansi{
+public class 로또생성기 implements Ansi {
 	static boolean ball[] = new boolean[45];
 	static int ballcount[] = new int[45];
 	static int Lotto[] = new int[6];
@@ -47,26 +47,41 @@ public class 로또생성기 implements Ansi{
 			N--;
 			// TODO 가장 많이 나온 숫자 구하기 Array.sort() 활용 X 6개 띄어내기
 		}
+		System.out.println();
 		mostCount();
 	} // main end
 
 	public static void mostCount() {
-		int most[] = new int[6];
-		most[0] = ballcount[0];
-		
-		for (int i = 1; i < ballcount.length; i++) {
-			if (ballcount[i] >= most[0]) {
-				most[0] = i;
-			
-			}
-			if ((i-1) % 5 == 0) { // 확인 시인성 향상용 
-				System.out.printf(FONT_CYAN + "%3d" + RESET,ballcount[i]);
+		int mostLotto[] = new int[6];
+		int most;
+		most = 0;
+
+		for (int i = 0; i < mostLotto.length; i++) {
+			for (int j = 0; j < ballcount.length; j++) {
+				if (ballcount[j] > most) { // 같거나 큰 값이 나오면 그 인덱스를 저장
+					most = ballcount[j];
+					mostLotto[i] = j + 1; // 많이 나온 로또 번호는 해당 인덱스 + 1
+				}
+
+			} // j for end
+			ballcount[mostLotto[i] - 1] = 0; // ballcount의 해당 인덱스를 초기화 ; 값을 가지고 있었기 때문에 1을 빼줘야 인덱스
+			most = 0;
+		} // i for end
+
+		for (int i = 0; i < ballcount.length; i++) { // ballcount print by index
+			if (i % 5 == 0) { // 확인 시인성 향상용
+				System.out.printf(FONT_CYAN + "%3d" + RESET, ballcount[i]);
 			} else {
 				System.out.printf("%3d", ballcount[i]);
 			}
 		}
+
 		System.out.println();
-		System.out.println(most[0] + 1); //젤 많이 나온 값 
+		
+		System.out.print("가장 자주 뽑인 로또 6개> ");
+		for (int i = 0; i < mostLotto.length; i++) {
+			System.out.printf("%3d ", mostLotto[i]); // 젤 많이 나온 로또번호
+		}
 	}
 
 }
