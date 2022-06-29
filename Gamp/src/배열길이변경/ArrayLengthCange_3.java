@@ -70,7 +70,6 @@ public class ArrayLengthCange_3 extends MyArray {
 				System.out.println("데이터 손실 가능성 있음");
 				return a;
 			}
-
 		}
 		return a;
 	}

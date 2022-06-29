@@ -25,7 +25,7 @@ public class MyArray {
 	}
 	
 	public void showData() {
-		for(int i =0; i < data.length; i++) {
+		for(int i = 0; i < data.length; i++) {
 			System.out.printf("%3d", data[i]);
 		}
 		System.out.println();
