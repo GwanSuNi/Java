@@ -17,20 +17,20 @@ public class MainClass {
 		System.out.println("=== 증감 연산자 ===");
 		i++;
 		System.out.println("증가: " + i);
-		j++;
+		j--;
 		System.out.println("감소: " + j);
 
 		System.out.println("=== 비교, 관계 연산자 ===");
-		System.out.println("i==j: " + (i == j));
-		System.out.println("i!=j: " + (i != j));
-		System.out.println("i>j: " + (i > j));
-		System.out.println("i < j" + (i < j));
+		System.out.println("i == j: " + (i == j));
+		System.out.println("i != j: " + (i != j));
+		System.out.println("i > j: " + (i > j));
+		System.out.println("i < j: " + (i < j));
 
 		System.out.println("=== 논리 연산자 ===");
 		System.out.println("&& (AND): " + (i > j && i > h));
 		System.out.println("&& (AND): " + (i > j && i < h));
 		System.out.println("|| (OR): " + (i > j || i > h));
-		System.out.println("|| (OR)" + (i > j || i < h));
+		System.out.println("|| (OR): " + (i > j || i < h));
 
 		System.out.println("=== 할당 연산자 ===");
 		System.out.println("h = " + h);
