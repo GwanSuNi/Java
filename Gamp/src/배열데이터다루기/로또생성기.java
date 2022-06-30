@@ -58,7 +58,7 @@ public class 로또생성기 implements Ansi {
 
 		for (int i = 0; i < mostLotto.length; i++) {
 			for (int j = 0; j < ballcount.length; j++) {
-				if (ballcount[j] > most) { // 같거나 큰 값이 나오면 그 인덱스를 저장
+				if (ballcount[j] > most) { // 큰 값이 나오면 그 인덱스를 저장
 					most = ballcount[j];
 					mostLotto[i] = j + 1; // 많이 나온 로또 번호는 해당 인덱스 + 1
 				}
