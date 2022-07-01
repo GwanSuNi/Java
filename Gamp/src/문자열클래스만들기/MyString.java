@@ -2,7 +2,7 @@ package 문자열클래스만들기;
 
 public class MyString {
 	// 문자열 저장할 char형 배열과 문자열 길이에 대한 정보 필요
-	char string[];
+	private char string[];
 
 	MyString() {
 		string = null;
@@ -15,6 +15,10 @@ public class MyString {
 		for (int i = 0; i < string.length; i++) {
 			this.string[i] = string[i];
 		}
+	}
+
+	public int length() {
+		return this.string.length;
 	}
 
 	public char charAt(int index) {
@@ -34,24 +38,27 @@ public class MyString {
 		if ((from >= 0 && from < string.length) && (to > 0 && to <= string.length) && from < to) {
 			char c[] = new char[to - from];
 			for (int i = from; i < to; i++) {
-				// copy
+				c[i - from] = this.string[i]; // 0부터 시작해야되기 때문에 시작 인덱스를 빼야함
 			}
+			s = new MyString(c);
 			return s;
-
 		}
 		// 범위 밖이면 s가 null인 것을 반환
-
 		return s;
 	}
 
 	public boolean equals(MyString s) {
 		// this.string 과 s의 길이가 같은 경우에만 각 인덱스 값 비교
-		if (this.string.length == s.length) {
-
-		}
-		for (int i = 0; i < this.string.length; i++) {
-
-		}
+		if (this.string.length == s.string.length) {
+			for (int i = 0; i < this.string.length; i++) {
+				if (this.string[i] != s.string[i]) { // 하나라도 다르면 false 모두 통과하면 true
+					return false;
+				}
+			} // end for
+			return true;
+		} // end if
+			// 길이가 같지 않으면 false
+		return false;
 	}
 
 	public char[] toCharArray() {
