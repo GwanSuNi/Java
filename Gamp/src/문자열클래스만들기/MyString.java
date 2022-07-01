@@ -49,8 +49,8 @@ public class MyString {
 
 	public boolean equals(MyString s) {
 		// this.string 과 s의 길이가 같은 경우에만 각 인덱스 값 비교
-		if (this.string.length == s.string.length) {
-			for (int i = 0; i < this.string.length; i++) {
+		if (this.string.length == s.length()) {
+			for (int i = 0; i < this.length(); i++) {
 				if (this.string[i] != s.string[i]) { // 하나라도 다르면 false 모두 통과하면 true
 					return false;
 				}
