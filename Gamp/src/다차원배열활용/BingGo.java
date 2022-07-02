@@ -39,6 +39,7 @@ public class BingGo implements Ansi {
 //			}
 //			System.out.println();
 //		}
+		
 		// checkBoard false로 초기화
 		for (int i = 0; i < checkBoard.length; i++) {
 			for (int j = 0; j < checkBoard[0].length; j++) {
