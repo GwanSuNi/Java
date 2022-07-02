@@ -62,11 +62,11 @@ public class BingGo implements Ansi {
 		return false;
 	}
 
-	public boolean isBingGo() { // TODO repair
+	public boolean isBingGo() {
 		// checkBoard에서 N*2+2 방향에서 빙고인지 확인 후 리턴
-		int vertical[] = new int[board.length];
-		int horizontal[] = new int[board.length];
-		int diagonal[] = new int[2];
+		byte vertical[] = new byte[board.length];
+		byte horizontal[] = new byte[board.length];
+		byte diagonal[] = new byte[2];
 
 		for (int i = 0; i < checkBoard.length; i++) {
 			for (int j = 0; j < checkBoard[0].length; j++) {
