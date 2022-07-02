@@ -1,7 +1,0 @@
-package 배열길이변경;
-
-public class MyArray {
-	private int size;
-	
-	
-}

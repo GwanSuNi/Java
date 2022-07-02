@@ -22,6 +22,7 @@ java_multi_line_comment=128,128,128
 java_operator=230,230,250
 java_single_line_comment=128,128,128
 java_string=23,198,163
+markOccurrences=false
 matchingBracketsColor=249,250,244
 org.eclipse.jdt.ui.formatterprofiles.version=22
 org.eclipse.jdt.ui.typefilter.disabled=java.awt.*;java.rmi.*;org.graalvm.*
