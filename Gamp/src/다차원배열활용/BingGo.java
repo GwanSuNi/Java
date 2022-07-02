@@ -3,7 +3,7 @@ package 다차원배열활용;
 import Practice.Ansi;
 
 public class BingGo implements Ansi {
-	public int board[][];
+	private int board[][];
 	private boolean checkBoard[][];
 
 	BingGo(int N) {
