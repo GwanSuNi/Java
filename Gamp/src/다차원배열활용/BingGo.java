@@ -2,7 +2,7 @@ package 다차원배열활용;
 
 import Practice.Ansi;
 
-public class BingGo implements Ansi{
+public class BingGo implements Ansi {
 	public int board[][];
 	private boolean checkBoard[][];
 
@@ -77,20 +77,20 @@ public class BingGo implements Ansi{
 					horizontal[j]++;
 					if (i == j) {
 						diagonal[0]++;
-					} 
-					if ( i + j == board.length - 1) {
+					}
+					if (i + j == board.length - 1) {
 						diagonal[1]++;
 					}
 				}
 			} // end for j
 		} // end for i
-		// 행렬 검사
+			// 행렬 검사
 		for (int i = 0; i < board.length; i++) {
-			if(horizontal[i] == board.length || vertical[i] == board.length) {
+			if (horizontal[i] == board.length || vertical[i] == board.length) {
 				return true;
 			}
 		}
-		// 대각선 검사 
+		// 대각선 검사
 		for (int i = 0; i < 2; i++) {
 			if (diagonal[i] == board.length) {
 				return true;
@@ -103,12 +103,11 @@ public class BingGo implements Ansi{
 	public void showStatus() {
 		for (int i = 0; i < checkBoard.length; i++) {
 			for (int j = 0; j < checkBoard[0].length; j++) {
-				if(checkBoard[i][j]) {
+				if (checkBoard[i][j]) {
 					System.out.print(FONT_CYAN);
 					System.out.printf("%6s ", checkBoard[i][j]);
 					System.out.print(RESET);
-				}
-				else {
+				} else {
 					System.out.print(FONT_BLACK);
 					System.out.printf("%6s ", checkBoard[i][j]);
 					System.out.print(RESET);

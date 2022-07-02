@@ -24,18 +24,17 @@ public class BingGoGame implements Ansi {
 				if (binggo.check(number)) {
 					// 빙고 여부 점검
 					binggo.showStatus();
-				
-						if (binggo.isBingGo()) {
-							System.out.println(FONT_GREEN + "=== BINGGO! ===" + RESET);
-							break;
-						}
-					
+
+					if (binggo.isBingGo()) {
+						System.out.println(FONT_GREEN + "=== BINGGO! ===" + RESET);
+						break;
+					}
 				} else {
 					System.out.println(FONT_RED + "중복값 입력됨" + RESET);
 					continue;
 				}
 				count--;
-			} // end while 
+			} // end while
 		} else {
 			System.out.println(FONT_RED + "사이즈 오류" + RESET);
 		}
