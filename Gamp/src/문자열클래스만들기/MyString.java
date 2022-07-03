@@ -41,7 +41,6 @@ public class MyString {
 				c[i - from] = this.string[i]; // 0부터 시작해야되기 때문에 시작 인덱스를 빼야함
 			}
 			s = new MyString(c);
-			return s;
 		}
 		// 범위 밖이면 s가 null인 것을 반환
 		return s;
