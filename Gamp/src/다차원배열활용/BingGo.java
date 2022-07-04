@@ -106,11 +106,11 @@ public class BingGo implements Ansi {
 			for (int j = 0; j < checkBoard[0].length; j++) {
 				if (checkBoard[i][j]) {
 					System.out.print(FONT_CYAN);
-					System.out.printf("%6s ", checkBoard[i][j]);
+					System.out.printf("%2c", 'O');
 					System.out.print(RESET);
 				} else {
 					System.out.print(FONT_BLACK);
-					System.out.printf("%6s ", checkBoard[i][j]);
+					System.out.printf("%2c", 'X');
 					System.out.print(RESET);
 				}
 			}

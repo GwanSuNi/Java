@@ -40,7 +40,6 @@ public class BingGoGame implements Ansi {
 		} else {
 			System.out.println(FONT_RED + "사이즈 오류" + RESET);
 		}
-		
 		scanner.close();
 	}
 }
