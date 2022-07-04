@@ -15,7 +15,7 @@ public class BingGoGame implements Ansi {
 			// N*N 크기의 빙고판, 점검판 생성 bingo 클래스에서 구현
 			BingGo binggo = new BingGo(n);
 			binggo.showStatus();
-			
+
 			// while로 N * 2 + 2 의 횟수만큼만 반복해서
 			int count = n * 2 + 2;
 			while (count > 0) {
@@ -24,8 +24,12 @@ public class BingGoGame implements Ansi {
 				int number = scanner.nextInt();
 
 				if (binggo.check(number)) {
-					binggo.showStatus();
-
+					if (count > 1) {
+						binggo.showStatus();
+					} else {
+						binggo.showStatus();
+						System.out.println(FONT_PURPLE + "=== YOU LOSE! ===" + RESET);
+					}
 					// 빙고 여부 점검
 					if (binggo.isBingGo()) {
 						System.out.println(FONT_GREEN + "=== BINGGO! ===" + RESET);
@@ -36,6 +40,7 @@ public class BingGoGame implements Ansi {
 					continue;
 				}
 				count--;
+
 			} // end while
 		} else {
 			System.out.println(FONT_RED + "사이즈 오류" + RESET);
