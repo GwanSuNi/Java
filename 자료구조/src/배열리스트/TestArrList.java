@@ -22,9 +22,6 @@ public class TestArrList {
 		// 정수값 70을 3번째 자리로 insert()
 		alist.insert(70, 3);
 		alist.print();
-		
-		
-		
 	}
 
 }
