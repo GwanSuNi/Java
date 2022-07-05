@@ -6,4 +6,10 @@
     <fullyQualifiedTypeName name="javax.swing.Spring"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="Practice.Ansi"/>
+    <fullyQualifiedTypeName name="다차원배열활용.BingGo"/>
+    <fullyQualifiedTypeName name="javax.net.ssl.SSLEngine"/>
+    <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="단순연결리스트.SList"/>
 </qualifiedTypeNameHistroy>
