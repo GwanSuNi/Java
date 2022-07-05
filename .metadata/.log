@@ -11353,6 +11353,7 @@ java.lang.Error: SWT Resource was not properly disposed
 	at org.eclipse.jface.resource.ImageDescriptor.createResource(ImageDescriptor.java:230)
 	at org.eclipse.jface.resource.DeviceResourceManager.allocate(DeviceResourceManager.java:55)
 	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
+	at org.eclipse.jface.resource.LazyResourceManager.create(LazyResourceManager.java:97)
 	at org.eclipse.jface.resource.LocalResourceManager.allocate(LocalResourceManager.java:72)
 	at org.eclipse.jface.resource.AbstractResourceManager.create(AbstractResourceManager.java:88)
 	at org.eclipse.jface.resource.ResourceManager.createImage(ResourceManager.java:175)
