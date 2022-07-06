@@ -1,4 +1,4 @@
-package 배열스택;
+package 스택활용예제;
 
 import java.util.EmptyStackException;
 
@@ -58,7 +58,7 @@ public class ArrayStack<E> {
 		}
 		return item;
 	}
-	
+
 	public void print() {
 		if (isEmpty()) {
 			System.out.println("배열이 비어있음");
