@@ -18,7 +18,7 @@ public class Calculator {
 				System.out.println("종료됨");
 				break;
 			}
-			
+
 			ArrayStack<String> stack = new ArrayStack<String>();
 			postfix = "";
 			// 아니면 수식 계산
@@ -44,7 +44,7 @@ public class Calculator {
 					// 사칙연산 우선순위 높은 *, / 이면 바로 스택에 추가
 					if (token.equals("*") || token.equals("/")) {
 						stack.push(token);
-					} else { // 사칙연산 우선순위 낮은 +,-이면 스택에서 토큰 꺼서 후위 표기 문자열로 푸가
+					} else { // 사칙연산 우선순위 낮은 +,-이면 스택에서 토큰 꺼서 후위 표기 문자열로 추가
 						do {
 							if (stack.isEmpty())
 								break;
@@ -63,9 +63,41 @@ public class Calculator {
 				postfix += stack.pop() + " ";
 			}
 			System.out.println(postfix);
-		}
 
+			ArrayStack<String> calc = new ArrayStack<String>();
+			StringTokenizer values = new StringTokenizer(postfix, " ", true);
+			double num1, num2, result;
+
+			while (values.hasMoreTokens()) {
+				String token = values.nextToken();
+
+				if (token.chars().allMatch(Character::isDigit)) { // token을 trim 하면 empty string 뜨고 있던 이유
+					calc.push(token);
+				} else if (token.equals("+") || token.equals("-") || token.equals("*") || token.equals("/")) {
+					num2 = Double.parseDouble(calc.pop());
+					num1 = Double.parseDouble(calc.pop());
+
+					result = calculate(num1, num2, token);
+					calc.push(Double.toString(result));
+				}
+			} // end while
+				// result
+			System.out.println("result = " + calc.pop());
+		}
 		scan.close();
 	}
 
+	public static double calculate(double a, double b, String op) {
+		switch (op) {
+		case "*":
+			return a * b;
+		case "/":
+			return a / b;
+		case "+":
+			return a + b;
+		default:
+			return a - b;
+		}
+
+	}
 }
