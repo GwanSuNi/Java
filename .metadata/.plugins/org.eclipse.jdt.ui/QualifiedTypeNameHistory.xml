@@ -12,5 +12,12 @@
     <fullyQualifiedTypeName name="단순연결리스트.SList"/>
     <fullyQualifiedTypeName name="com.java.ex.Warrior"/>
     <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="java.util.EmptyStackException"/>
     <fullyQualifiedTypeName name="java.lang.Object"/>
+    <fullyQualifiedTypeName name="배열스택.ArrayStack"/>
+    <fullyQualifiedTypeName name="스택활용예제.ArrayStack"/>
+    <fullyQualifiedTypeName name="java.util.StringTokenizer"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="자료구조를위한테스트.Student"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
 </qualifiedTypeNameHistroy>
