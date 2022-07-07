@@ -2,6 +2,7 @@ package 배열리스트;
 
 import java.util.NoSuchElementException;
 
+@SuppressWarnings("unchecked")
 public class ArrList<E> {
 	private E a[]; // 리스트의 항목들을 저장할 배열
 	private int size; // 리스트의 항목 수
@@ -86,10 +87,7 @@ public class ArrList<E> {
 				t[i] = a[i];
 			}
 			a = (E[]) t;
-		} else {
-			
-		}
-
+		} 
 	}
 
 	public void print() {
