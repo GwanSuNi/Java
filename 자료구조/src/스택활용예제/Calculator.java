@@ -65,7 +65,7 @@ public class Calculator {
 			System.out.println(postfix);
 
 			ArrayStack<String> calc = new ArrayStack<String>();
-			StringTokenizer values = new StringTokenizer(postfix, " ", true);
+			StringTokenizer values = new StringTokenizer(postfix, " ");
 			double num1, num2, result;
 
 			while (values.hasMoreTokens()) {
