@@ -7,7 +7,6 @@ INDEX VERSION 1.131+/Users/gwansuni/eclipse-workspace/.metadata/.plugins/org.ecl
 4227380626.index
 4276263709.index
 2940033357.index
-1244916365.index
 3627706843.index
 1093875809.index
 1865797976.index
