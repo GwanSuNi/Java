@@ -22,4 +22,7 @@
     <fullyQualifiedTypeName name="java.lang.Character"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="캐스팅.Cat"/>
+    <fullyQualifiedTypeName name="com.java.ex.main.MainClass"/>
+    <fullyQualifiedTypeName name="com.java.ex.character.Wizard"/>
+    <fullyQualifiedTypeName name="com.java.ex.character.Archor"/>
 </qualifiedTypeNameHistroy>
