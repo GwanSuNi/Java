@@ -14,7 +14,6 @@ public class MainClass {
 		child1.takeMoney(1500);
 		child2.takeMoney(1000);
 		child3.takeMoney(1000);
-		
 	}
 
 }
