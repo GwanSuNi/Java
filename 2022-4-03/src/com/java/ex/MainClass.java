@@ -7,6 +7,7 @@ import com.java.ex.iphone.IphoneFunc;
 
 public class MainClass {
 
+	@SuppressWarnings("unused")
 	public static void main(String[] args) {
 		IphoneFunc i12 = new Iphone12();
 		System.out.println();
