@@ -1,6 +1,6 @@
 package 다차원배열활용;
 
-import Practice.Ansi;
+import practice.Ansi;
 
 public class BingGo implements Ansi {
 	private int board[][];

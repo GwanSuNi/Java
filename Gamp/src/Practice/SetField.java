@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class SetField extends PrintStar { // 배열의 성분을 가진 클래스
 	private int FirstLength;

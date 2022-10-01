@@ -1,7 +1,8 @@
 package 다차원배열활용;
 
 import java.util.Scanner;
-import Practice.Ansi;
+
+import practice.Ansi;
 
 public class BingGoGame implements Ansi {
 

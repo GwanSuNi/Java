@@ -1,4 +1,4 @@
-package Practice;
+package practice;
 
 public class Array4 implements Ansi{
 

@@ -1,6 +1,6 @@
 package 배열데이터다루기;
 
-import Practice.Ansi;
+import practice.Ansi;
 
 /*
  * 랜덤하게 생성한 번호에 대한 중복 검증을 어떻게 하면 좋을까?
