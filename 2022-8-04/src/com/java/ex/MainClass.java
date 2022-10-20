@@ -28,7 +28,7 @@ public class MainClass {
 		hMap.put(4, "Map에 저장될 문자열4");
 		System.out.println(hMap.toString());
 		
-		// map은 키 값을 허용하지 않기 때문에 이를 set에 넣어도 됨
+		// map은 중복 값을 허용하지 않기 때문에 이를 set에 넣어도 됨
 		Set<Integer> set = hMap.keySet();
 		Iterator<Integer> itr2 = set.iterator();
 		while (itr2.hasNext()) {
