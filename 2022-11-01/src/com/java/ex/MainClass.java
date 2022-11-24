@@ -29,7 +29,10 @@ public class MainClass {
 			System.out.println("접속 성공");
 
 			statement = connection.createStatement();
+			// select와 같이 여러 개의 결과값이 있는 경우 excuteQuery()를 사용해 ResultSet 클래스를 통해 받아와야함
 			resultSet = statement.executeQuery(query);
+			// excuteUpdate()는 여러개의 결과값을 받아올 필요가 없을 때 (1 성공, 0 실패)
+//			resultSet = statement.executeUpdate(query);
 			while (resultSet.next()) {
 				// resultSet의 getString(컬럼 이름);
 				// 컬럼 속성이 숫라면 int ~~ = resultSet.getInt(컬럼 이름);
