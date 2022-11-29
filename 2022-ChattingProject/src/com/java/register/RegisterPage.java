@@ -7,6 +7,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -52,6 +54,7 @@ public class RegisterPage extends JFrame {
 		
 		passwordField = new JPasswordField();
 		passwordField.setHorizontalAlignment(JButton.CENTER);
+		passwordField.addActionListener(new EventInsertPass(passwordField, passStrongJLabel));
 		
 		rePasswordfField = new JPasswordField();
 		rePasswordfField.setHorizontalAlignment(JButton.CENTER);
@@ -62,12 +65,20 @@ public class RegisterPage extends JFrame {
 		idOverlapLabel = new JLabel("중복검사결과");
 		idOverlapLabel.setHorizontalAlignment(JLabel.CENTER);
 		idOverlapLabel.setFont(new Font("중복 검사 결과", Font.BOLD|Font.ITALIC, 10));
+		overLapCheckbButton.addActionListener(new EventClickOverLap(idField, idOverlapLabel));
 		// TODO: 글자색 변경
 		
 		
 		cancleButton = new JButton("취소");
+		// 창 종료되는 이벤트 리스너
+		cancleButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				dispose();
+			}
+		});
 		
 		registerButton = new JButton("회원가입");
+		registerButton.addActionListener(new EventClickOk(nameField, nickNameField, idField, passwordField));
 		
 		passStrongJLabel = new JLabel("약함");
 		passStrongJLabel.setFont(new Font("약함", Font.BOLD, 12));
