@@ -6,6 +6,8 @@ import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -13,6 +15,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+import com.java.register.RegisterPage;
 
 @SuppressWarnings("serial")
 public class LoginPage extends JFrame {
@@ -40,9 +44,18 @@ public class LoginPage extends JFrame {
 //		passwordField.setBorder(BorderFactory.createEmptyBorder());
 		
 		loginButton = new JButton("로그인");
+		loginButton.addActionListener(new EventClickLogin(idField, passwordField));
+		
 		signInButton = new JButton("회원가입");
+		signInButton.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new RegisterPage();
+			}
+		});
 		
 		forgotButton = new JButton("Forgot Password?");
+		forgotButton.addActionListener(new EventClickForgetPass());
 		forgotButton.setToolTipText("비밀번호를 잊으셨다면 누르세요");
 		forgotButton.setBorderPainted(false);
 		forgotButton.setFont(new Font("비밀번호찾기", Font.ITALIC, 10));
@@ -85,9 +98,8 @@ public class LoginPage extends JFrame {
 		setVisible(true);
 	}
 
-	@SuppressWarnings("unused")
 	public static void main(String[] args) {
-		LoginPage loginPage = new LoginPage();
+		new LoginPage();
 	}
 
 }
