@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon_step2;
 import java.util.Scanner;
 
 public class BJ_9498 {

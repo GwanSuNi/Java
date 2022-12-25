@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon_step1;
 
 public class BJ_2557 {
 

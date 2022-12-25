@@ -1,15 +1,16 @@
-package backjoon;
+package backjoon_step1;
 
 import java.util.Scanner;
 
-public class BJ_1000 {
+class BJ_10998 {
+
 	public static void main(String[] args) {
 		int a, b;
 		Scanner scanner = new Scanner(System.in);
 		a = scanner.nextInt();
 		b = scanner.nextInt();
-		
-		System.out.println(a+b);
+		System.out.println(a*b);
 		scanner.close();
 	}
+
 }

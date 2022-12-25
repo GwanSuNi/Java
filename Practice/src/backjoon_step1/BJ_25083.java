@@ -1,4 +1,4 @@
-package backjoon;
+package backjoon_step1;
 
 class BJ_25083 {
 	public static void main(String[] args) {
